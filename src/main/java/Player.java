@@ -14,9 +14,12 @@
  *      Player newPlayer = new Player("Mario", 35);
  **/
 public class Player {
+    
     public String playerName;
+    public String playerName1 = "Frodo";
+    public String playerName2 = "Sam";
     public int level;
-
+    
     /**
      * this.playerName should be set to playerName.
      *
@@ -30,13 +33,18 @@ public class Player {
      *
      * @param playerName the name of the player to be created.
      */
-    public Player(String playerName){
+    public Player(String playerName1){
         
-        this.playerName = "Frodo"; 
-        this.playerName = "Sam";
-        this.level = 1;
+       if ( this.playerName1 == "Frodo" || this.playerName2 == "Sam"  ) {
+
+            this.level = 1;
+       
+
+       }
+
     }
-        
+       
+    
 
     /**
      * Again, the values of this object should be set with the help of the 'this' keyword to avoid confusion between
